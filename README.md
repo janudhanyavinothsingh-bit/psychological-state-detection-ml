@@ -1,348 +1,134 @@
-\# Psychological State Detection using Machine Learning
+# Psychological State Detection using Machine Learning
 
+ **Live App:**
+   https://psychological-state-detection-ml-3bgur9jmb7vhes2pgewzuq.streamlit.app/
 
+   Upload your own dataset and get instant predictions using the deployed ML model.
 
-\## Project Overview
+---
 
+---
 
+##  Project Overview
 
-This project focuses on predicting a person's \*\*psychological state\*\* using physiological, behavioral, and demographic data.
+This project uses **Machine Learning** to predict a person's **psychological state** based on physiological and behavioral data.
 
+The model is trained on structured data and deployed using **Streamlit**, allowing users to upload a CSV file and instantly get predictions.
 
+---
 
-The goal is to build an \*\*AI-based mental state detection system\*\* that can identify conditions such as stress, focus, fatigue, anxiety, or calmness based on body signal patterns.
+##  Features
 
+* 📊 Upload CSV data for prediction
+* 🤖 ML models (Random Forest, Logistic Regression, Gradient Boosting)
+* 🧠 Predict psychological states
+* 📥 Download prediction results
+* 🌐 Fully deployed web application
 
+---
 
-This project was developed as part of my \*\*machine learning internship project\*\*, with an industry-level workflow including:
+## Tech Stack
 
+* **Python**
+* **Pandas, NumPy**
+* **Scikit-learn**
+* **Streamlit**
+* **Joblib**
 
+---
 
-\* data preprocessing
-
-\* exploratory data analysis
-
-\* feature engineering
-
-\* model comparison
-
-\* hyperparameter tuning
-
-\* SHAP explainability
-
-\* Streamlit deployment
-
-
-
-\---
-
-
-
-\## Problem Statement
-
-
-
-Mental health and psychological state analysis is becoming important in:
-
-
-
-\* wearable health devices
-
-\* smart healthcare systems
-
-\* workplace wellness monitoring
-
-\* cognitive performance tracking
-
-\* stress detection applications
-
-
-
-Using machine learning, this project predicts the \*\*psychological state of a person from biosignal data\*\*.
-
-
-
-\---
-
-
-
-\## Dataset Features
-
-
-
-The dataset contains a combination of:
-
-
-
-\### Physiological Signals
-
-
-
-\* Heart Rate
-
-\* HRV
-
-\* GSR
-
-\* EEG
-
-\* Oxygen Level
-
-\* Blood Pressure
-
-
-
-\### Behavioral Signals
-
-
-
-\* Cognitive Load
-
-\* Focus Duration
-
-
-
-\###  Demographic Features
-
-
-
-\* Age
-
-\* Gender
-
-\* Education
-
-
-
-\### Target
-
-
-
-\* Psychological State
-
-
-
-\---
-
-
-
-\## Machine Learning Workflow
-
-
-
-The project follows this step-by-step pipeline:
-
-
-
-1\. Dataset loading
-
-2\. Data understanding
-
-3\. Missing value handling
-
-4\. Label encoding
-
-5\. Feature engineering
-
-6\. Train-test split
-
-7\. Model comparison
-
-8\. Cross-validation
-
-9\. Hyperparameter tuning
-
-10\. Model explainability using SHAP
-
-11\. Model saving
-
-12\. Streamlit deployment
-
-
-
-\---
-
-
-
-\## Models Used
-
-
-
-The following machine learning models were compared:
-
-
-
-\* Logistic Regression
-
-\* Random Forest
-
-\* Gradient Boosting
-
-
-
-The final best-performing model was selected using \*\*GridSearchCV hyperparameter tuning\*\*.
-
-
-
-\---
-
-
-
-\## Key Advanced Features
-
-
-
-This project includes advanced internship-level improvements:
-
-
-
-✅ Multiple model comparison
-
-✅ Cross-validation
-
-✅ Hyperparameter tuning
-
-✅ Feature importance
-
-✅ SHAP explainability
-
-✅ Streamlit deployment
-
-✅ Downloadable prediction results
-
-
-
-\---
-
-
-
-\## Streamlit App
-
-
-
-The project also includes a Streamlit web app where users can:
-
-
-
-\* upload CSV files
-
-\* predict psychological states
-
-\* view prediction results
-
-\* download output CSV
-
-
-
-Run locally using:
-
-
-
-```bash
-
-streamlit run app/streamlit\_app.py
+##  Project Structure
 
 ```
-
-
-
-\---
-
-
-
-\## Project Folder Structure
-
-
-
-```bash
-
 psychological-state-detection-ml/
-
 │
-
-├── data/
-
-├── notebooks/
-
-├── models/
-
-├── app/
-
-├── reports/
-
-├── requirements.txt
-
-├── README.md
-
-└── .gitignore
-
+├── streamlit_app.py # Streamlit web app
+├── final_tuned_model.pkl # Trained ML model
+├── best_model.pkl # Saved best model
+├── label_encoder.pkl # Label encoder
+├── feature_columns.pkl # Feature alignment file
+│
+├── psychological_state_dataset.csv # Dataset
+├── psychological_state_detection.ipynb # Jupyter notebook
+│
+├── notebooks/ # Additional notebooks
+├── requirements.txt # Dependencies
+├── .gitignore
+└── README.md
 ```
 
+---
 
+##  How It Works
 
-\---
+1. User uploads a CSV file
+2. Data is preprocessed (encoding + alignment)
+3. Model predicts psychological state
+4. Results are displayed and downloadable
 
+---
 
+##  Machine Learning Workflow
 
-\## Future Improvements
+* Data Cleaning & Preprocessing
+* Feature Engineering (One-Hot Encoding)
+* Train-Test Split
+* Model Training & Evaluation
+* Model Selection
+* Deployment with Streamlit
 
+---
 
+##  Model Performance
 
-In future, this project can be improved by:
+| Model               | Accuracy |
+| ------------------- | -------- |
+| Logistic Regression | 0.21     |
+| Random Forest       | 0.28     |
+| Gradient Boosting   | 0.24     |
 
+---
 
+##  How to Run Locally
 
-\* XGBoost / CatBoost models
+```bash
+git clone https://github.com/your-username/psychological-state-detection-ml.git
+cd psychological-state-detection-ml
+pip install -r requirements.txt
+streamlit run streamlit_app.py
+```
 
-\* real-time sensor data prediction
+---
 
-\* wearable device integration
+##  Input Format
 
-\* cloud deployment
+Upload a CSV file with relevant physiological features.
+The app automatically processes and aligns the data.
 
-\* deep learning models
+---
 
-\* real-time stress dashboard
+##  Key Learnings
 
+* Handling feature mismatch in ML deployment
+* Model serialization using Joblib
+* Building end-to-end ML pipelines
+* Deploying ML apps with Streamlit
+* Debugging real-world ML issues
 
+---
 
-\---
+## Future Improvements
 
+*  Improve model accuracy
+*  Add data visualization
+*  Add form-based input (no CSV needed)
+*  Use deep learning models
 
+---
 
-\##  Internship Learning Outcome
+##  Author
 
-
-
-Through this project, I learned:
-
-
-
-\* professional ML workflow
-
-\* preprocessing pipeline design
-
-\* multiclass classification
-
-\* model optimization
-
-\* explainable AI
-
-\* Streamlit app deployment
-
-\* GitHub project structuring
-
-
-
-This project helped me understand how machine learning can be applied in \*\*mental health and healthcare AI systems\*\*.
-
-
-
-\---
-
-
-
-\##  Author
+**Janu Dhanya Vinoth Singh**
 
 
 
