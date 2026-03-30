@@ -1,4 +1,4 @@
-# Psychological State Detection using Machine Learning
+## Psychological State Detection using Machine Learning
 
  **Live App:**
  
@@ -40,7 +40,6 @@ The model is trained on structured data and deployed using **Streamlit**, allowi
 
 ##  Project Structure
 
-```
 psychological-state-detection-ml/
 │
 ├── streamlit_app.py # Streamlit web app
@@ -88,7 +87,6 @@ git clone https://github.com/your-username/psychological-state-detection-ml.git
 cd psychological-state-detection-ml
 pip install -r requirements.txt
 streamlit run streamlit_app.py
-
 
 ##  Input Format
 
