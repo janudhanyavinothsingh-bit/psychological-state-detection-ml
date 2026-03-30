@@ -1,13 +1,12 @@
 # Psychological State Detection using Machine Learning
 
  **Live App:**
+ 
    https://psychological-state-detection-ml-3bgur9jmb7vhes2pgewzuq.streamlit.app/
 
    Upload your own dataset and get instant predictions using the deployed ML model.
 
----
 
----
 
 ##  Project Overview
 
@@ -15,17 +14,16 @@ This project uses **Machine Learning** to predict a person's **psychological sta
 
 The model is trained on structured data and deployed using **Streamlit**, allowing users to upload a CSV file and instantly get predictions.
 
----
+
 
 ##  Features
 
-* 📊 Upload CSV data for prediction
-* 🤖 ML models (Random Forest, Logistic Regression, Gradient Boosting)
-* 🧠 Predict psychological states
-* 📥 Download prediction results
-* 🌐 Fully deployed web application
-
----
+*  Upload CSV data for prediction
+*  ML models (Random Forest, Logistic Regression, Gradient Boosting)
+*  Predict psychological states
+*  Download prediction results
+*  Fully deployed web application
+  
 
 ## Tech Stack
 
@@ -35,7 +33,10 @@ The model is trained on structured data and deployed using **Streamlit**, allowi
 * **Streamlit**
 * **Joblib**
 
----
+##  Screenshots
+<img width="1862" height="902" alt="Screenshot (203)" src="https://github.com/user-attachments/assets/0b01c59c-3e74-46a4-870b-71e27880ab6d" />
+<img width="1899" height="893" alt="Screenshot (205)" src="https://github.com/user-attachments/assets/128c4a4a-413f-42be-8a96-6872599efb2c" />
+
 
 ##  Project Structure
 
@@ -55,9 +56,6 @@ psychological-state-detection-ml/
 ├── requirements.txt # Dependencies
 ├── .gitignore
 └── README.md
-```
-
----
 
 ##  How It Works
 
@@ -65,8 +63,6 @@ psychological-state-detection-ml/
 2. Data is preprocessed (encoding + alignment)
 3. Model predicts psychological state
 4. Results are displayed and downloadable
-
----
 
 ##  Machine Learning Workflow
 
@@ -77,8 +73,6 @@ psychological-state-detection-ml/
 * Model Selection
 * Deployment with Streamlit
 
----
-
 ##  Model Performance
 
 | Model               | Accuracy |
@@ -87,8 +81,6 @@ psychological-state-detection-ml/
 | Random Forest       | 0.28     |
 | Gradient Boosting   | 0.24     |
 
----
-
 ##  How to Run Locally
 
 ```bash
@@ -96,16 +88,12 @@ git clone https://github.com/your-username/psychological-state-detection-ml.git
 cd psychological-state-detection-ml
 pip install -r requirements.txt
 streamlit run streamlit_app.py
-```
 
----
 
 ##  Input Format
 
 Upload a CSV file with relevant physiological features.
 The app automatically processes and aligns the data.
-
----
 
 ##  Key Learnings
 
@@ -115,8 +103,6 @@ The app automatically processes and aligns the data.
 * Deploying ML apps with Streamlit
 * Debugging real-world ML issues
 
----
-
 ## Future Improvements
 
 *  Improve model accuracy
@@ -124,15 +110,11 @@ The app automatically processes and aligns the data.
 *  Add form-based input (no CSV needed)
 *  Use deep learning models
 
----
-
 ##  Author
 
 **Janu Dhanya Vinoth Singh**
 
-
-
-Developed by \*\*Janu Dhanya Vinoth Singh\*\* as part of Machine Learning Internship Project.
+Developed by Janu Dhanya Vinoth Singh as part of Machine Learning Internship Project.
 
 
 
