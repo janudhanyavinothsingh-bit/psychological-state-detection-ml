@@ -81,8 +81,6 @@ psychological-state-detection-ml/
 | Gradient Boosting   | 0.24     |
 
 ##  How to Run Locally
-
-```bash
 git clone https://github.com/your-username/psychological-state-detection-ml.git
 cd psychological-state-detection-ml
 pip install -r requirements.txt
